@@ -1,0 +1,105 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	background-image: url("https://static.wikia.nocookie.net/zelda_gamepedia_en/images/9/91/LANS_Koholint_Island_Render.png/revision/latest?cb=20190611192115");
+	background-color: rgb(214, 180, 180);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+h1 {
+	font-family: zeldaFont;
+	color: honeydew;
+	font-size: 5vh;
+	width: auto;
+	height: auto;
+	padding: 20px 20px 20px 20px;
+	margin: 50px 0 0 550px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	position: absolute;
+	border-radius: 7px;
+	background-color: teal;
+	border: 3px solid white;
+}
+
+.memory-game {
+	width: 640px;
+	height: 640px;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	perspective: 1000px;
+}
+
+.memory-card {
+	width: calc(25% - 10px);
+	height: calc(33.333% - 10px);
+	margin: 5px;
+	position: relative;
+	transform: scale(1);
+	transform-style: preserve-3d;
+	transition: transform .5s;
+	padding: 40px 10px 40px 10px;
+	/* box-shadow: 1px 1px 1px rgba(0, 0, 0, .3); */
+}
+
+.memory-card:active {
+	transform: scale(0.97);
+	transition: transform .2s;
+}
+
+.memory-card.flip {
+	transform: rotateY(180deg);
+}
+
+.front-face,
+.back-face {
+	width: auto;
+	height: auto;
+	padding: 40px 10px 40px 10px;
+	position: absolute;
+	border-radius: 7px;
+	border: 3px solid white;
+	background: teal;
+	backface-visibility: hidden;
+}
+
+/* .front-face {
+	background: linear-gradient(315deg, #ce29f7, white);
+	font-size: 3rem;
+} */
+
+.front-face {
+	transform: rotateY(180deg);
+}
+/* //old css */
+
+/* .game {
+	display: flex;
+	flex-wrap: wrap;
+	width: 400px;
+	height: 300px;
+	/* border: 3px solid black;
+	margin: 10px;
+	display: inline-block; */
+
+@font-face {
+	font-family: zeldaFont;
+	src: url(Triforce.ttf);
+}
+/* 
+#start {
+	height: 90vh;
+	font-family: 'Bungee', cursive;
+	color: #ce29f7;
+	position: relative;
+} */

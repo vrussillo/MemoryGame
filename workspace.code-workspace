@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../Memory Game"
+		},
+		{
+			"path": "img"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Memory Game"
+	}
+}
