@@ -7,7 +7,7 @@
 body {
 	height: 100vh;
 	display: flex;
-	background-image: url("./img/LinksAwakening.png");
+	background-image: url("https://github.com/vrussillo/MemoryGame/blob/main/img/LinksAwakening.png?raw=true");
 	background-color: rgb(214, 180, 180);
 	background-position: center;
 	background-repeat: no-repeat;
